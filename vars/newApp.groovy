@@ -1,5 +1,5 @@
 def uber(String repoUrl){
-    pipeline
+pipeline {
     agent any
     stages{
         stage('1-build'){
@@ -19,4 +19,5 @@ def uber(String repoUrl){
             }
         }
     }
+}
 }
