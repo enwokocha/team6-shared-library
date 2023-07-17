@@ -16,6 +16,7 @@ pipeline {
         stage('closing'){
             steps{
                 echo "new demo"
+                echo "complete"
             }
         }
     }
