@@ -1,7 +1,7 @@
 def uber(String repoUrl){
     pipeline {
         agent any
-        stages{
+        stages {
             stage('1-build') {
                 steps {
                     sh 'free -g'
@@ -13,8 +13,8 @@ def uber(String repoUrl){
                             url: "${repoUrl}"
                 }
             }
-            stage('closing'){
-                steps{
+            stage('closing') {
+                steps {
                     echo "new demo"
                     echo "complete"
                 }
